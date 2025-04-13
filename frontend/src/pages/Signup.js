@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Signup.css';
 
 const Signup = () => {
@@ -33,6 +33,9 @@ const Signup = () => {
       <input type="text" name="hobbies" placeholder="Hobbies" onChange={handleChange} required />
       <input type="text" name="interests" placeholder="Interests" onChange={handleChange} required />
       <button type="submit">Sign Up</button>
+      <button  type="submit">
+        <Link className='login'  to="/login">login</Link>
+      </button>
     </form>
   );
 };

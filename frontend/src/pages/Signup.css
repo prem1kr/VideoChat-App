@@ -22,6 +22,10 @@ body {
     max-width: 400px;
     animation: fadeIn 1s ease-in-out;
   }
+  .signup {
+    text-decoration: none;
+    color: white;
+  }
   
   /* Input Fields */
   input {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
@@ -27,6 +27,9 @@ const Login = () => {
       <input type="text" name="username" placeholder="Username" onChange={handleChange} required />
       <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
       <button type="submit">Login</button>
+      <button  type="submit">
+        <Link className='signup'  to="/signup">Signup</Link>
+      </button>
     </form>
   );
 };
