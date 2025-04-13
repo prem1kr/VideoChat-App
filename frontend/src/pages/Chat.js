@@ -65,7 +65,7 @@ const Chat = () => {
     const uniqueId = uuidv4();
     setUserId(uniqueId);
 
-    socket.current = io("http://localhost:5000", { transports: ["websocket"] });
+    socket.current = io("https://videochat-app-ltqi.onrender.com", { transports: ["websocket"] });
     socket.current.emit("register-user", { userId: uniqueId });
 
     socket.current.on("disconnect", () => {
